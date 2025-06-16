@@ -20,6 +20,25 @@ typedef struct {
     int hasVoted;
 } Voter;
 
+Candidate candidates[MAX_CANDIDATES];
+Voter voters[MAX_VOTERS];
+int candidateCount = 0;
+int voterCount = 0;
+
+void setColor(int color) {
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
+}
+
+void displayHeader();
+void registerCandidates();
+void registerVoters();
+void mainMenu();
+void castVote();
+void showResults();
+void findWinner();
+int authenticateVoter(char id[]);
+void clearInputBuffer();
+
 int main() {
 
 }
