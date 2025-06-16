@@ -14,6 +14,11 @@ typedef struct {
     int votes;
 } Candidate;
 
+typedef struct {
+    char id[ID_LEN];
+    char password[ID_LEN];
+    int hasVoted;
+} Voter;
 
 int main() {
 
