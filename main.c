@@ -40,5 +40,9 @@ int authenticateVoter(char id[]);
 void clearInputBuffer();
 
 int main() {
-
+    displayHeader();
+    registerCandidates();
+    registerVoters();
+    mainMenu();
+    return 0;
 }
