@@ -8,6 +8,13 @@
 #define NAME_LEN 50
 #define ID_LEN 20
 
+
+typedef struct {
+    char name[NAME_LEN];
+    int votes;
+} Candidate;
+
+
 int main() {
 
 }
